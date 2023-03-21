@@ -1,0 +1,63 @@
+:root {
+  --main-color: #2f0a6d;
+  --secondary-color: #9d88b3;
+  --contrast-color: #fdf7ff;
+  --aux-color: #fffade;
+}
+
+.header {
+  background-color: var(--secondary-color);
+}
+
+.container-style {
+  border: 3px solid #9d88b3;
+  border-radius: 15px;
+}
+
+#profile-picture {
+  width: 150px;
+}
+
+small {
+  font-size: 70%;
+}
+
+.list-item {
+  font-weight: 400;
+}
+
+.footer {
+  height: 150px;
+}
+
+.text-main {
+  color: #2f0a6d;
+}
+
+.bg-main {
+  background-color: #2f0a6d;
+}
+
+.text-second {
+  color: #9d88b3;
+}
+
+.bg-second {
+  background-color: #9d88b3;
+}
+
+.text-con {
+  color: #fdf7ff;
+}
+
+.bg-con {
+  background-color: #fdf7ff;
+}
+
+.text-aux {
+  color: #fffade;
+}
+
+.bg-aux {
+  background-color: #fffade;
+}

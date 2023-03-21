@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Navbar Inicio -->
+      <nav class="navbar navbar-expand-sm bg-secondary">
+        <div class="container-fluid">
+          <!-- Seccion Izquierda Inicio -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">
+                <img
+                  src="./images/logo.png"
+                  alt="Argentina Programa Logo"
+                  style="width: 30px"
+                  class="rounded"
+                />
+              </a>
+            </li>
+            <li class="nav-item">
+              <span class="navbar-text text-con">
+                Argentina <br />
+                Programa
+              </span>
+            </li>
+          </ul>
+          <!-- Seccion Izquierda Fin -->
+
+          <!-- Seccion Derecha Inicio -->
+          <ul class="navbar-nav justifiy-content-end">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-con"
+                data-bs-toggle="dropdown"
+                href="#"
+                >Redes</a
+              >
+              <ul class="dropdown-menu text-con">
+                <li>
+                  <a class="dropdown-item" href="#">Git Hub</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Linked In</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-primary">Iniciar Sesion</button>
+            </li>
+          </ul>
+          <!-- Seccion Derecha Fin -->
+        </div>
+      </nav>
+      <!-- Navbar Fin -->
+
+      <!-- Banner -->
+      <div class="container-fluid bg-main pt-3">
+        <img
+          class="img-fluid rounded"
+          src="./images/bannerejemplo.jpg"
+          alt="banner"
+        />
+      </div>
+    </header>
+    <!-- Header fin-->
+
+    <main>
+      <!-- About me inicio -->
+      <section class="container-fluid bg-main pt-3 pb-3">
+        <div
+          id="container-about-me"
+          class="container container-style bg-main text-con p-2"
+        >
+          <div class="row">
+            <img
+              id="profile-picture"
+              class="rounded-circle ms-5 mt-2"
+              src="./images/profile.jpg"
+              alt="profile picture"
+            />
+            <h2 class="ms-2 mt-4">Facundo Del Vigo</h2>
+            <p class="ms-2">Ciudad de Formosa, Argentina.</p>
+          </div>
+        </div>
+      </section>
+      <!-- About me fin-->
+
+      <!-- Experiencia -->
+      <section class="container-fluid bg-main pt-3 pb-3">
+        <div
+          id="container-experience"
+          class="container container-style bg-main text-con p-2"
+        >
+          <div class="row ms-2">
+            <h2 class="mt-2">Experiencia</h2>
+            <ul class="ms-2">
+              <li>
+                <p class="list-item">
+                  Argentina Programa. <small>(2022-2023)</small>
+                </p>
+              </li>
+            </ul>
+            <h2 class="mt-5">Educacion</h2>
+            <ul class="ms-2">
+              <li>
+                <p class="list-item">
+                  Abogacia - Univesidad Nacional de Rosario.
+                  <small>(2018-2023)</small>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Experiencia Fin -->
+    </main>
+
+    <footer class="container-fluid footer bg-main text-con">
+      <div class="row">footer</div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
