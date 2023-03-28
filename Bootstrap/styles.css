@@ -5,9 +5,9 @@
   --aux-color: #fffade;
 }
 
-.header {
+/* .header {
   background-color: var(--secondary-color);
-}
+} */
 
 .container-style {
   border: 3px solid #9d88b3;
@@ -17,6 +17,10 @@
 #profile-picture {
   width: 150px;
 }
+
+/* #about-me {
+  padding-top: 185px;
+} */
 
 small {
   font-size: 70%;
