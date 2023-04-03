@@ -58,7 +58,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <button class="btn btn-primary">Iniciar Sesion</button>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-login">Iniciar Sesion</button>
             </li>
           </ul>
           <!-- Seccion Derecha Fin -->
@@ -67,13 +67,15 @@
       <!-- Navbar Fin -->
 
       <!-- Banner -->
-      <div class="container-fluid bg-main pt-3 text-center">
+      <div class="container-fluid bg-main pt-3 text-center position-relative">
         <img
           id="banner"
-          class="img-fluid rounded"
+          class="img-fluid rounded banner"
           src="./images/banner.avif"
           alt="banner"
         />
+        <!--boton de edicion-->
+        <button id="banner-button-edit" class="btn btn-success btn-circle" data-bs-toggle="modal" data-bs-target="#modal-banner">&#128393</button>
       </div>
     </header>
     <!-- Header fin-->
@@ -83,7 +85,7 @@
       <section class="container-fluid bg-main pt-3 pb-3">
         <div
           id="container-about-me"
-          class="container container-style bg-main text-con p-2"
+          class="container container-style bg-main p-2 position-relative"
         >
           <div class="row align-items-end">
             <div class="col-md-6">
@@ -93,13 +95,16 @@
                 src="./images/profile.jpg"
                 alt="profile picture"
               />
-              <h2 class="ms-2 mt-4">Facundo Del Vigo</h2>
-              <p class="ms-2">Ciudad de Formosa, Argentina.</p>
+              <h2 class="ms-2 mt-4 text-con">Facundo Del Vigo</h2>
+              <p class="ms-2 text-con">Ciudad de Formosa, Argentina.</p>
             </div>
-            <div id="about-me" class="col-md-6">
-              <h3>Acerca de</h3>
-              <p>Estudiante de abogacia y de desarrollo web.</p>
+            <div id="about-me" class="col-md-6 position-relative">
+                <h3 class="text-con">Acerca de</h3>
+                <p class="text-con">Estudiante de desarrollo web.</p>
+              <button id="about-me-button-delete" class="btn btn-success btn-circle">&#x2715</button><!--boton de eliminacion-->
             </div>
+            <!--boton de edicion-->
+            <button id="about-me-button-edit" class="btn btn-success btn-circle"data-bs-toggle="modal" data-bs-target="#modal-about-me">&#128393</button>
           </div>
         </div>
       </section>
@@ -112,41 +117,54 @@
           class="container container-style bg-main text-con p-2"
         >
           <div class="row ms-2">
-            <h2 class="mt-2">Experiencia</h2>
-            <ul class="ms-2">
-              <li>
-                <p class="list-item">
-                  Argentina Programa. <small>(2022-2023)</small>
-                </p>
-              </li>
-            </ul>
-            <h2 class="mt-5">Educacion</h2>
-            <ul class="ms-2">
-              <li>
-                <p class="list-item">
-                  Abogacia - Univesidad Nacional de Rosario.
-                  <small>(2018-2023)</small>
-                </p>
-              </li>
-              <li>
-                <p class="list-item">
-                  Bachiller en Economia y Finanzas - Instituto Privado General
-                  San Martin (Formosa).
-                  <small>(2008-2014)</small>
-                </p>
-              </li>
-            </ul>
+
+            <div id="experience-container" class="container-fluid mt-2 position-relative">
+              <h2>Experiencia</h2>
+              <ul class="ms-2">
+                <li>
+                  <p class="list-item">
+                    Argentina Programa. <small>(2022-2023)</small>
+                  </p>
+                </li>
+              </ul>
+              <button id="experience-button-delete" class="btn btn-success btn-circle">&#x2715</button><!--boton de eliminacion-->
+              <button id="experience-button-edit" class="btn btn-success btn-circle" data-bs-toggle="modal" data-bs-target="#modal-experience">&#128393</button> <!--boton de edicion-->
+            </div>
+
+            <div id="education-container" class="container-fluid mt-5 position-relative">
+              <h2>Educacion</h2>
+              <ul class="ms-2">
+                <li>
+                  <p class="list-item">
+                    Abogacia - Univesidad Nacional de Rosario.
+                    <small>(2018-2023)</small>
+                  </p>
+                </li>
+                <li>
+                  <p class="list-item">
+                    Bachiller en Economia y Finanzas - Instituto Privado General
+                    San Martin (Formosa).
+                    <small>(2008-2014)</small>
+                  </p>
+                </li>
+              </ul>
+              <button id="education-button-delete" class="btn btn-success btn-circle">&#x2715</button><!--boton de eliminacion-->
+              <button id="education-button-edit" class="btn btn-success btn-circle" data-bs-toggle="modal" data-bs-target="#modal-education">&#128393</button> <!--boton de edicion-->
+            </div>
+
           </div>
         </div>
       </section>
       <!-- Experiencia Fin -->
 
       <!-- Skills Inicio-->
-      <section class="container-fluid bg-main pt-3 pb-3">
+      <section id="skills-section" class="container-fluid bg-main pt-3 pb-3">
         <div class="container container-style bg-main text-con p-2 pb-4">
           <div class="row ms-2">
-            <div class="col">
+            <div class="col position-relative">
               <h2 class="text-center">Soft and Hard Skills</h2>
+                <button id="skills-button-delete" class="btn btn-success btn-circle">&#x2715</button><!--boton de eliminacion-->
+                <button id="skills-button-edit" class="btn btn-success btn-circle" data-bs-toggle="modal" data-bs-target="#modal-skills">&#128393</button> <!--boton de edicion-->
             </div>
           </div>
 
@@ -208,7 +226,7 @@
 
           <div class="row justify-content-evenly">
             <!-- Card 1 -->
-            <div class="card col-md-4 col-lg-3 bg-second pt-2 m-2">
+            <div class="card col-md-4 col-lg-3 bg-second pt-2 m-2 position-relative">
               <img
                 src="./images/portfolio.png"
                 class="card-img-top"
@@ -223,9 +241,11 @@
                 </p>
                 <a href="#" class="btn btn-primary">Visitar</a>
               </div>
+              <button id="proyect1-button-delete" class="btn btn-success btn-circle">&#x2715</button><!--boton de eliminacion-->
+              <button id="proyect1-button-edit" class="btn btn-success btn-circle" data-bs-toggle="modal" data-bs-target="#modal-project1">&#128393</button> <!--boton de edicion-->
             </div>
             <!-- Card 2 -->
-            <div class="card col-md-4 col-lg-3 bg-second pt-2 m-2">
+            <div class="card col-md-4 col-lg-3 bg-second pt-2 m-2 position-relative">
               <img
                 src="./images/stocker.png"
                 class="card-img-top"
@@ -239,10 +259,253 @@
                 </p>
                 <a href="#" class="btn btn-primary">Visitar</a>
               </div>
+              <button id="proyect2-button-delete" class="btn btn-success btn-circle">&#x2715</button><!--boton de eliminacion-->
+              <button id="proyect2-button-edit" class="btn btn-success btn-circle" data-bs-toggle="modal" data-bs-target="#modal-project2">&#128393</button> <!--boton de edicion-->
             </div>
           </div>
         </div>
       </section>
+      <!-- Proyectos Fin-->
+
+      <!-- Modales-->
+      <!--MODAL LOGIN-->
+      <div class="modal fade" id="modal-login" tabindex="-1" aria-labelledby="login-label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="login-label">Gestion de Usuario</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="login-username" class="form-label">Usuario</label>
+                  <input type="text" class="form-control" id="login-username">
+                </div>
+                <div class="mb-3">
+                  <label for="login-password" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="login-password">
+                </div>
+                <div class="d-flex justify-content-center gap-2">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Crear Cuenta</button>
+                  <button type="button" class="btn btn-success" data-bs-dismiss="modal">Ingresar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--MODAL BANNER-->
+      <div class="modal fade" id="modal-banner" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="banner-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="banner-label">Editar Banner</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="banner-file" class="form-label">Seleccione el nuevo banner</label>
+              <input class="form-control" type="file" id="banner-file">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <!--MODAL ABOUT ME-->
+      <div class="modal fade" id="modal-about-me" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="about-label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="about-label">Editar About Me</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="profile-file" class="form-label">Seleccione la nueva foto de perfil</label>
+                <input class="form-control" type="file" id="profile-file">
+              </div>
+              <div id="modal-about-me-edit"class="row">
+                <div class="col">
+                  <h4 class="ms-2" contenteditable="">Facundo Del Vigo</h4>
+                  <p class="ms-2" contenteditable="">Ciudad de Formosa, Argentina.</p>
+                </div>
+                <div class="col">
+                    <h4 contenteditable="">Acerca de</h3>
+                    <p contenteditable="">Estudiante de desarrollo web.</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--MODAL EXPERIENCIA-->
+      <div class="modal fade" id="modal-experience" tabindex="-1" aria-labelledby="experience-label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="experience-label">Editar Experiencia</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div id="modal-experience-edit" class="modal-body">
+              <ul class="ms-2">
+              <li>
+                <p class="list-item" contenteditable="">
+                  Argentina Programa. <small>(2022-2023)</small>
+                </p>
+              </li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--MODAL EDUCACION-->
+      <div class="modal fade" id="modal-education" tabindex="-1" aria-labelledby="education-label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="education-label">Editar Educacion</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div id="modal-education-edit" class="modal-body">
+              <ul class="ms-2">
+                <li>
+                  <p class="list-item" contenteditable="">
+                    Abogacia - Univesidad Nacional de Rosario.
+                    <small>(2018-2023)</small>
+                  </p>
+                </li>
+                <li>
+                  <p class="list-item" contenteditable="">
+                    Bachiller en Economia y Finanzas - Instituto Privado General
+                    San Martin (Formosa).
+                    <small>(2008-2014)</small>
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--MODAL SKILLS-->
+      <div class="modal fade" id="modal-skills" tabindex="-1" aria-labelledby="skills-label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="skills-label">Editar Skills</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div id="modal-skills-edit" class="modal-body">
+              <p>Los elementos seran modificados en el orden en que se ingresen, si no desea modificar uno de ellos dejelo vacio.</p>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Trabajo en Equipo" aria-label="Username">
+                <span class="input-group-text">%</span>
+                <input type="text" class="form-control" placeholder="0-100" aria-label="Server">
+              </div>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Ingles" aria-label="Username">
+                <span class="input-group-text">%</span>
+                <input type="text" class="form-control" placeholder="0-100" aria-label="Server">
+              </div>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Solucion de Problemas" aria-label="Username">
+                <span class="input-group-text">%</span>
+                <input type="text" class="form-control modal-percent" placeholder="0-100" aria-label="Server">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--MODAL PROYECTO1-->
+      <div class="modal fade" id="modal-project1" tabindex="-1" aria-labelledby="project1-label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="project1-label">Editar Proyecto</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div id="modal-project1-edit" class="modal-body">
+              <div class="mb-3">
+                <label for="project1-img-file" class="form-label">Selecciona nueva imagen</label>
+                <input class="form-control" type="file" id="project1-img-file">
+              </div>
+              <h5 contenteditable="">Portfolio Personal</h5>
+              <p contenteditable="">
+                Portolio personal que incluye informacion personal,
+                habilidades, experiencia, educacion y una recopilacion de los
+                proyectos de apliaciones webs propias.
+              </p>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="link1">Url del Proyecto</span>
+                <input type="text" class="form-control" id="project1-link" placeholder="Project Link" aria-label="Project Link" aria-describedby="link1">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--MODAL PROYECTO2-->
+      <div class="modal fade" id="modal-project2" tabindex="-1" aria-labelledby="project2-label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="project2-label">Editar Proyecto</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div id="modal-project2-edit" class="modal-body">
+              <div class="mb-3">
+                <label for="project2-img-file" class="form-label">Selecciona nueva imagen</label>
+                <input class="form-control" type="file" id="project2-img-file">
+              </div>
+              <h5>Simulador de Stock</h5>
+              <p>
+                SPA de un simulador de stock simple aplicando conocimientos de
+                HTML CSS Y Javascript.
+              </p>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="link2">Url del Proyecto</span>
+                <input type="text" class="form-control"  placeholder="Project Link" aria-label="Project Link" aria-describedby="link2">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modales FIN-->
     </main>
 
     <script

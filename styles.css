@@ -1,3 +1,8 @@
+/* COSAS QUE FALTAN HACER:
+1- MODAL DE LOGIN?
+2- MODALES DE EDICION.
+3- PONER MAS ABAJO EL ICONO DE ARGENTINA PROGRAMA.*/
+
 :root {
   --main-color: #2f0a6d;
   --secondary-color: #9d88b3;
@@ -14,8 +19,11 @@
   border-radius: 15px;
 }
 
-#banner {
+.banner {
   width: 100%;
+}
+
+#banner {
   opacity: 0.7;
 }
 
@@ -69,4 +77,105 @@ small {
 
 .bg-aux {
   background-color: #fffade;
+}
+
+/* Botones de Edicion */
+
+.btn-circle {
+  border-radius: 50%;
+}
+
+#banner-button-edit {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+}
+
+#about-me-button-delete {
+  position: absolute;
+  bottom: 20px;
+  left: 250px;
+  width: 41px;
+}
+
+#about-me-button-edit {
+  width: 41px;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+
+#experience-button-delete {
+  position: absolute;
+  top: 5px;
+  left: 188px;
+  width: 41px;
+}
+
+#experience-button-edit {
+  position: absolute;
+  top: 5px;
+  left: 238px;
+  width: 41px;
+}
+
+#education-button-delete {
+  position: absolute;
+  top: 0px;
+  left: 170px;
+  width: 41px;
+}
+
+#education-button-edit {
+  position: absolute;
+  top: 0px;
+  left: 220px;
+  width: 41px;
+}
+
+#skills-button-delete {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  width: 41px;
+}
+
+#skills-button-edit {
+  position: absolute;
+  top: 10px;
+  right: 80px;
+  width: 41px;
+}
+
+#proyect1-button-delete {
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+  width: 41px;
+}
+
+#proyect1-button-edit {
+  position: absolute;
+  bottom: 15px;
+  right: 80px;
+  width: 41px;
+}
+
+#proyect2-button-delete {
+  position: absolute;
+  bottom: 65px;
+  right: 30px;
+  width: 41px;
+}
+
+#proyect2-button-edit {
+  position: absolute;
+  bottom: 65px;
+  right: 80px;
+  width: 41px;
+}
+
+/* Modales */
+.modal-percent {
+  width: 80px;
 }
